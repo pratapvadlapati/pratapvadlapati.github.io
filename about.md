@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Pratap Vadlapati' blogs
+Pratap Vadlapati's blogs
 
 ### More Information
 
@@ -12,4 +12,4 @@ API, Integration and and Enthusiast, I write these to keep my learnings as journ
 
 ### Contact me
 
-[pratapvadlapati@gmail.com](mailto:email@domain.com)
+[pratapvadlapati@gmail.com](mailto:pratapvadlapati@gmail.com)
