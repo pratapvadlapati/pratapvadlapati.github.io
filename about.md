@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Pratap Vadlapati' blogs
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+API, Integration and and Enthusiast, I write these to keep my learnings as journals and the opinions are very much my understandings.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[pratapvadlapati@gmail.com](mailto:email@domain.com)
