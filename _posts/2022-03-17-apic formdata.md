@@ -9,4 +9,4 @@ Usecase: To expose formdata apis in IBM APIC, we can do it oob by writing Gatewa
  The exposed api required a param client_credential in formdata. So am sending it, you can send as much data as you can as form data is a key-value pairs.
 
 
-![_gateway_script]({{ site.baseurl }}/images/alien-logo.png)
+![_gateway_script]({{ site.baseurl }}/images/fordata.png)
