@@ -1,8 +1,7 @@
 ---
 published: false
 ---
-#####
-![_gateway_script ]({{ site.baseurl }}/images/formdata.png)
+##### Custom Logging on IBM API Connect (V5) - Data power Gateway
 
 In realtime situation of an IT services from development phases to production the all time lifesaver would be the "logging mechanism" in place, to avoid stress in development lifecycle and chaos after moving our application or apis onto production
 
