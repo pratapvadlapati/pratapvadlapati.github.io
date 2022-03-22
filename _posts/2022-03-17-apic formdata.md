@@ -1,9 +1,9 @@
 ---
 published: true
 ---
-### How to proxy mimetype application/x-www-form-urlencoded in APIC
+##### How to proxy mimetype application/x-www-form-urlencoded in APIC
 
-Usecase: To expose formdata apis in IBM APIC, we can do it oob by writing Gateway Script in assemby section.
+**Usecase**: To expose formdata apis in IBM APIC, we can do it oob by writing Gateway Script in assemby section.
  Step1: Add gateway script action before invoke and change content-type to formdata. (executed in apicv10 & 2018)
  
  The exposed api required a param client_credential in formdata. So am sending it, you can send as much data as you can as form data is a key-value pairs.
@@ -14,3 +14,5 @@ Usecase: To expose formdata apis in IBM APIC, we can do it oob by writing Gatewa
 Drag invoke policy and configure your target url (which the service accepts formdata)
 
 ![_assembly_pallet ]({{ site.baseurl }}/images/assembly.png)
+
+This is a generic use case, based on this we can improvise as per the requirement.
