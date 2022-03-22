@@ -11,3 +11,6 @@ Usecase: To expose formdata apis in IBM APIC, we can do it oob by writing Gatewa
 
 ![_gateway_script ]({{ site.baseurl }}/images/formdata.png)
 
+Drag invoke policy and configure your target url (which the service accepts formdata)
+
+![_assembly_pallet ]({{ site.baseurl }}/images/assembly.png)
