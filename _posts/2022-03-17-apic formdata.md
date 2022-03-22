@@ -10,3 +10,4 @@ Usecase: To expose formdata apis in IBM APIC, we can do it oob by writing Gatewa
 
 
 ![_gateway_script]({{ site.baseurl }}/images/fordata.png)
+![_config.yml]({{ site.baseurl }}/images/config.png)
