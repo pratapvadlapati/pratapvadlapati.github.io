@@ -1,0 +1,12 @@
+---
+published: false
+---
+##### Access Basic Auth creds in gateway script IBM APIC.
+
+Usecase:
+
+In any situation, if we have to access Basic auth username and password in gateway script (IBM API Connect  Api-gateway)
+
+The below snippet can be a reference for further improvisions.
+
+![_gateway_script ]({{ site.baseurl }}/images/basicauth.png)
