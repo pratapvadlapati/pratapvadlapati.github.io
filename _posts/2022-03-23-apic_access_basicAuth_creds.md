@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ##### Access Basic Auth creds in gateway script IBM APIC.
 
