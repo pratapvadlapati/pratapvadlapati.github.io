@@ -14,7 +14,7 @@ The below snippet can be a reference for further improvisions.
 
 With xslt we can get those details with below dp fucntion.
 
-** <xsl:value-of select="dp:auth-info('basic-auth-name')"/>
+<xsl:value-of select="dp:auth-info('basic-auth-name')"/>
 
 
-** <xsl:value-of select="dp:auth-info('ssl-cipher-suite')"/>
+<xsl:value-of select="dp:auth-info('ssl-cipher-suite')"/>
