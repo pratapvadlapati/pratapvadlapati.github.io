@@ -45,27 +45,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-family: $helveticaNeue;
+  color: $yellow;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+{
+  font-size: 25px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
-}
-
-h3 {
   font-size: 20px;
 }
 
-h4 {
+h3 {
   font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
   color: $white;
 }
 
 p {
-  margin: 15px 0;
+  margin: 14px 0;
+  color: $paragraphTxt;
 }
 
 a {
@@ -117,7 +132,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $white;
+  color: $yellow;
 }
 
 // Specify the color of the selection
