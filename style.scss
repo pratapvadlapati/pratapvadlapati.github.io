@@ -30,7 +30,7 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $white;
   font-weight: bold;
@@ -88,7 +88,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $brightgreen;
   }
 }
 
