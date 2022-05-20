@@ -20,7 +20,8 @@ Assembly Section-Node editor for APIC to build custom use cases
 
 
 ### OVERVIEW WORKFLOW APPROACH FOR GENERATING, VERIFYING SIGNATURE AND SEND EVENT TO KAFKA.
-![webhook1.jpg]({{site.baseurl}}/_posts/webhook1.jpg)
+
+![_webhook1.jpg ]({{ site.baseurl }}/images/webhook1.jpg)
 
  
 
@@ -39,7 +40,7 @@ Assembly Section-Node editor for APIC to build custom use cases
 
 ### NODE LEVEL IMPLEMENTATION LAYOUT OF THE API.
 Prototype Implementation of an API in assembly section in IBM APIC.
-![p1.PNG]({{site.baseurl}}/_posts/p1.PNG)
+![_p1.PNG]({{site.baseurl}}/images/p1.PNG)
 
  
 
