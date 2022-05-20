@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## A Prototype Design to Expose & verify signature of Webhook-events in IBM APIC.
 
@@ -81,6 +81,3 @@ Gateway Script	Custom Code	This node receives the original Event request as JSON
             }
         ]
     };
-
-
-
