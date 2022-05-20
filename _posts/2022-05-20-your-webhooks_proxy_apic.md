@@ -1,9 +1,9 @@
 ---
 published: false
 ---
-## A Prototype Design to Expose & verify signature of Webhook-events in IBM 
+## A Prototype Design to Expose & verify signature of Webhook-events in IBM APIC.
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
 
 
 ### What to Expect
