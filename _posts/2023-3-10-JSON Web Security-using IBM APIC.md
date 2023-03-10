@@ -80,6 +80,15 @@ Sign the Request using Postman.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_verify.png)
   
 
-
 Verify the Signed Request using Postman.
-     ![_apicAssemblySign]({{ site.baseurl }}/images/postman_verify.png)
+     ![_apicAssemblyVerify]({{ site.baseurl }}/images/postman_verify.png)
+     
+# Implimentation: Sign the Request & Encrypt
+    ![_apicAssemblySign]({{ site.baseurl }}/images/apic_signEnc.png)
+    
+  Sign & Encrypt the Request using Postman.
+  ![_apicAssemblySgnEnc]({{ site.baseurl }}/images/postman_signEnc.png)
+    
+# Implimentation: Decrypt the Request & Verify Digital Signature 
+  ![_apicAssemblyVerifyEnc]({{ site.baseurl }}/images/apic_verifyEnc.png)
+    
