@@ -19,7 +19,7 @@ Prerequisites:
 PrivateKey     - To Sign message/Request & to Decrypt message
 PublicKey/Shared cert - To verify message & to Encrypt message
     
-# Implimentation: Sign Request
+# Implementation: Sign Request
 1. Create Crypto Keys/certificate Objects in IBM Datapower.
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cryptObj.png)
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cert.png)
@@ -80,7 +80,7 @@ Sign the Request using Postman.
      
   
 
-# Implimentation: Verify Signed Request
+# Implementation: Verify Signed Request
  
   1.  In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_verify.png)
@@ -89,13 +89,13 @@ Sign the Request using Postman.
 Verify the Signed Request using Postman.
      ![_apicAssemblyVerify]({{ site.baseurl }}/images/postman_verify.png)
      
-# Implimentation: Sign the Request & Encrypt
+# Implementation: Sign the Request & Encrypt
    ![_apicAssemblySign]({{ site.baseurl }}/images/apic_signEnc.png)
     
   Sign & Encrypt the Request using Postman.
     ![_apicAssemblySgnEnc]({{ site.baseurl }}/images/postman_signEnc.png)
     
-# Implimentation: Decrypt the Request & Verify Digital Signature 
+# Implementation: Decrypt the Request & Verify Digital Signature 
   ![_apicAssemblyVerifyEnc]({{ site.baseurl }}/images/apic_verifyEnc.png)
   
   
