@@ -2,6 +2,7 @@
 published: true
 ---
 ## JSON Web Security -- USING IBM APIC
+![_cryptoObjDataPower ]({{ site.baseurl }}/images/JWS.png)
 
 #### Description:
 
