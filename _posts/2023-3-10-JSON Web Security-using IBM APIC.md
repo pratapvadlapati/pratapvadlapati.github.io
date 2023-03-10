@@ -6,7 +6,9 @@ published: true
 #### Description:
 
 Exchange information between systems securely using JSON Web Security with Digital Signature, Encrypting, Decrypting and Verifying Digital Signature in IBM API Connect. 
-  **Integrity**: we make sure data you send arrives at its destination unaltered.
+
+  **Integrity**: we make sure data you send arrives at its destination unaltered.  
+  
   **Encryption**: we make your data unintelligible while in transit to keep it private.
 
 # Usecase:  
@@ -24,14 +26,16 @@ The information typlically JSON messages/requests or responses should be protect
    
    In the above fig2.. I have created seperate endpoints for Sign, Verify, Sign&Encrypt, Decrypt&Verify for the requirement in APIC. 
    
-  ## APIC Paths/endpoints
+  ####
+
+APIC Paths/endpoints
   
      `**/api/v1/json/sign**          (this endpoint takes json request and signs the request...)
      **/api/v1/json/verify**	       (this endpoint takes json request and verifies digital signature...)
      **/api/v1/json/enc_sign**	     (this endpoint takes json request and encrypts message and does digital signature...)
      **/api/v1/json/enc_verify**	   (this endpoint takes json request and decrypts message and verifies digital signature...)`
-   
- 3. In Assembly pallete, create gateway script node to write cutsom gatewayscript.
+     
+  3. In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_assembly.png)
      
   Point to be noted...
@@ -46,12 +50,14 @@ The information typlically JSON messages/requests or responses should be protect
         
         I am using the 2.2 option for this implementation...
         
-  4. We will use JOSE module for the JSON Web Security implementation - which is provided by IBM as inbulit moduel, where you can require and use in GW.
+   4. We will use JOSE module for the JSON Web Security implementation - which is provided by IBM as inbulit moduel, where you can require and use in GW.
       ![_apicAssemblySign]({{ site.baseurl }}/images/apic_sign.png)
       
       Since the code snippet is self explanoatory Am not going through the code.
      
-  #### Point to be noted...
+  #####
+
+Point to be noted...
   
     If you notice on the line no 13 ...
     Here in this function CreateJWSHeader we should pass PrivateKey and Alogithm to sign.
@@ -62,9 +68,12 @@ The information typlically JSON messages/requests or responses should be protect
  Sign the Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_sign.png)
      
-  # Implimentation: Verify Signed Request
+  ##
+
+ Implimentation: Verify Signed Request
+ 
   1.  In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_verify.png)
   
-  # Verify the Signed Request using Postman.
+  ### Verify the Signed Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_verify.png)
