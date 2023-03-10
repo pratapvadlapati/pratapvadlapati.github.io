@@ -5,7 +5,7 @@ published: true
    ![_BreifWorkFlow ]({{ site.baseurl }}/images/JWS.png)
 
 #### Description:
-
+   
 Exchange information between systems securely using JSON Web Security with Digital Signature, Encrypting, Decrypting and Verifying Digital Signature in IBM API Connect. 
 
 >  **Integrity**: we make sure data you send arrives at its destination unaltered.  
@@ -18,9 +18,10 @@ The information typlically JSON messages/requests or responses should be protect
 Prerequisites:
 PrivateKey     - To Sign message/Request & to Decrypt message
 PublicKey/Shared cert - To verify message & to Encrypt message
-
+    
 # Implimentation: Sign Request
 1. Create Crypto Keys/certificate Objects in IBM Datapower.
+    ![_BreifWorkFlow ]({{ site.baseurl }}/images/JWS.png)
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cryptObj.png)
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cert.png)
     
