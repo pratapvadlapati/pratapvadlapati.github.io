@@ -7,9 +7,9 @@ published: true
 
 Exchange information between systems securely using JSON Web Security with Digital Signature, Encrypting, Decrypting and Verifying Digital Signature in IBM API Connect. 
 
-  **Integrity**: we make sure data you send arrives at its destination unaltered.  
+>  **Integrity**: we make sure data you send arrives at its destination unaltered.  
   
-  **Encryption**: we make your data unintelligible while in transit to keep it private.
+>  **Encryption**: we make your data unintelligible while in transit to keep it private.
 
 # Usecase:  
 The information typlically JSON messages/requests or responses should be protected from any interruptions while in transit. To achieve this we can opt for JSON Web Security using JOSE module in IBM API Connect with RSA Keys(Public/Private Keys).
@@ -27,7 +27,7 @@ The information typlically JSON messages/requests or responses should be protect
    In the above fig2.. I have created seperate endpoints for Sign, Verify, Sign&Encrypt, Decrypt&Verify for the requirement in APIC. 
    
 
-####
+
 
 APIC Paths/endpoints
   
@@ -39,7 +39,7 @@ APIC Paths/endpoints
   3. In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_assembly.png)
      
-  ####
+  
 
 Point to be noted...
  
@@ -58,7 +58,7 @@ Point to be noted...
       
       Since the code snippet is self explanoatory Am not going through the code.
      
-  ####
+  
 
 Point to be noted...
   
@@ -67,19 +67,19 @@ Point to be noted...
     The key here provided is **jsonSignprivkey** ... the actual format to refence the Datapower Object is {name: ObjectName}
     But we should provide only ObjectName as given in line no 13.
     
-  ###
+  
 
 Sign the Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_sign.png)
      
-  ##
+  
 
 Implimentation: Verify Signed Request
  
   1.  In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_verify.png)
   
- ###
+
 
 Verify the Signed Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_verify.png)
