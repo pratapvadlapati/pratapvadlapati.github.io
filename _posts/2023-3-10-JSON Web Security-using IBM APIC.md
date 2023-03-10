@@ -17,19 +17,19 @@ The information typlically JSON messages/requests or responses should be protect
 # Implimentation: Sign Request
 1. Create Crypto Keys/certificate Objects in IBM Datapower.
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cryptObj.png)
-    fig: 1
+    
     
 2. Create an Open API in IBM API Connect to receive request and do digital signature and verification.
-   For simplicity, am not showing the creation of the API here.... jsut focussin on the signing and verification process.
+   For simplicity, am not showing the creation of the API here.... jsut focussing on the signing and verification process.
     ![_apicAssemblyApi]({{ site.baseurl }}/images/apic_api.png)
-    fig: 2
+    
    
    In the above fig2.. I have created seperate endpoints for Sign, Verify, Sign&Encrypt, Decrypt&Verify for the requirement in APIC. 
    
 
 
 
-APIC Paths/endpoints
+APIC Paths/Endpoints
   
  *    **/api/v1/json/sign**          (this endpoint takes json request and signs the request...)
  *    **/api/v1/json/verify**	       (this endpoint takes json request and verifies digital signature...)
@@ -47,11 +47,11 @@ Point to be noted...
     we should create using cli scripts.. am leaving here you can chek on this for more info on how to do this. )
  >   2. We have to reference the crypto object (Private Key) in the code to do Digital Signature.
         we have 3 option to do this.
-        2.1 Refer the Private or Public Key/cert as String base64 encoded.
-        2.2 Refer the Private or Public Key/cert as (DataPower)Object reference.
-        2.3 Refer the Private or Public Key/cert as JWK as per standard format.
+      *  2.1 Refer the Private or Public Key/cert as String base64 encoded.
+      *  2.2 Refer the Private or Public Key/cert as (DataPower)Object reference.
+      *  2.3 Refer the Private or Public Key/cert as JWK as per standard format.
         
-        I am using the 2.2 option for this implementation...
+      >  I am using the 2.2 option for this implementation...
         
    4. We will use JOSE module for the JSON Web Security implementation - which is provided by IBM as inbulit moduel, where you can require and use in GW.
       ![_apicAssemblySign]({{ site.baseurl }}/images/apic_sign.png)
