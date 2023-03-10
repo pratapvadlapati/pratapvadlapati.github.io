@@ -26,7 +26,8 @@ The information typlically JSON messages/requests or responses should be protect
    
    In the above fig2.. I have created seperate endpoints for Sign, Verify, Sign&Encrypt, Decrypt&Verify for the requirement in APIC. 
    
-  ####
+
+####
 
 APIC Paths/endpoints
   
@@ -38,7 +39,9 @@ APIC Paths/endpoints
   3. In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_assembly.png)
      
-  Point to be noted...
+  ####
+
+Point to be noted...
  
     1. Once we have created the Crypto Objects in Datapower (to be precise, in Datapower Gateways we should'nt create objects directly instead,
     we should create using cli scripts.. am leaving here you can chek on this for more info on how to do this. )
@@ -55,7 +58,7 @@ APIC Paths/endpoints
       
       Since the code snippet is self explanoatory Am not going through the code.
      
-  #####
+  ####
 
 Point to be noted...
   
@@ -63,17 +66,20 @@ Point to be noted...
     Here in this function CreateJWSHeader we should pass PrivateKey and Alogithm to sign.
     The key here provided is **jsonSignprivkey** ... the actual format to refence the Datapower Object is {name: ObjectName}
     But we should provide only ObjectName as given in line no 13.
+    
   ###
 
- Sign the Request using Postman.
+Sign the Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_sign.png)
      
   ##
 
- Implimentation: Verify Signed Request
+Implimentation: Verify Signed Request
  
   1.  In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_verify.png)
   
-  ### Verify the Signed Request using Postman.
+ ###
+
+Verify the Signed Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_verify.png)
