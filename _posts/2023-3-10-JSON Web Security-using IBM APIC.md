@@ -74,9 +74,7 @@ Sign the Request using Postman.
      
   
 
-##
-
-Implimentation: Verify Signed Request
+# Implimentation: Verify Signed Request
  
   1.  In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_verify.png)
