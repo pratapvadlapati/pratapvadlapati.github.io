@@ -5,10 +5,12 @@ published: true
 
 #### Description:
 
-Exchange information between system securely using JSON Web Security with Digital Signature, Encrypting, Decrypting and Verifying Digital Signature in IBM API Connect. 
+Exchange information between systems securely using JSON Web Security with Digital Signature, Encrypting, Decrypting and Verifying Digital Signature in IBM API Connect. 
+  **Integrity**: we make sure data you send arrives at its destination unaltered.
+  **Encryption**: we make your data unintelligible while in transit to keep it private.
 
 # Usecase:  
-The information typlically JSON messages/requests or responses should be protected from any intermissions while in transist. To achieve this we can opt for JSON Web SEcurity using JOSE module in IBM API Connect with RSA Keys(Public/Private Keys).
+The information typlically JSON messages/requests or responses should be protected from any interruptions while in transit. To achieve this we can opt for JSON Web Security using JOSE module in IBM API Connect with RSA Keys(Public/Private Keys).
 
 # Implimentation: Sign Request
 1. Create Crypto Keys/certificate Objects in IBM Datapower.
@@ -21,6 +23,7 @@ The information typlically JSON messages/requests or responses should be protect
     fig: 2
    
    In the above fig2.. I have created seperate endpoints for Sign, Verify, Sign&Encrypt, Decrypt&Verify for the requirement in APIC. 
+   
   ## APIC Paths/endpoints
   
      `**/api/v1/json/sign**          (this endpoint takes json request and signs the request...)
@@ -48,8 +51,7 @@ The information typlically JSON messages/requests or responses should be protect
       
       Since the code snippet is self explanoatory Am not going through the code.
      
-  #### 
-  Point to be noted...
+  #### Point to be noted...
   
     If you notice on the line no 13 ...
     Here in this function CreateJWSHeader we should pass PrivateKey and Alogithm to sign.
@@ -66,4 +68,3 @@ The information typlically JSON messages/requests or responses should be protect
   
   # Verify the Signed Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_verify.png)
-     
