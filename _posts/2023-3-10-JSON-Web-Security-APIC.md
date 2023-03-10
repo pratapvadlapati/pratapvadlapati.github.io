@@ -14,7 +14,7 @@ Exchange information between system securely using JSON Web Security with Digita
 # Usecase:  
 The information typlically JSON messages/requests or responses should be protected from any intermissions while in transist. To achieve this we can opt for JSON Web SEcurity using JOSE module in IBM API Connect with RSA Keys(Public/Private Keys).
 
-# Implimentation:
+# Implimentation: Sign Request
 1. Create Crypto Keys/certificate Objects in IBM Datapower.
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cryptObj.png)
     fig: 1
@@ -57,3 +57,11 @@ The information typlically JSON messages/requests or responses should be protect
     But we should provide only ObjectName as given in line no 13.
   # Sign the Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_sign.png)
+     
+  # Implimentation: Verify Signed Request
+  1.  In Assembly pallete, create gateway script node to write cutsom gatewayscript.
+     ![_apicAssembly]({{ site.baseurl }}/images/apic_verify.png)
+  
+  # Verify the Signed Request using Postman.
+     ![_apicAssemblySign]({{ site.baseurl }}/images/postman_verify.png)
+     
