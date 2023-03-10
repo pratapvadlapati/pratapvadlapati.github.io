@@ -14,6 +14,10 @@ Exchange information between systems securely using JSON Web Security with Digit
 # Usecase:  
 The information typlically JSON messages/requests or responses should be protected from any interruptions while in transit. To achieve this we can opt for JSON Web Security using JOSE module in IBM API Connect with RSA Keys(Public/Private Keys).
 
+Prerequisites:
+PrivateKey     - To Sign message/Request & to Decrypt message
+PublicKey/Shared cert - To verify message & to Encrypt message
+
 # Implimentation: Sign Request
 1. Create Crypto Keys/certificate Objects in IBM Datapower.
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cryptObj.png)
