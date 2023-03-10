@@ -1,13 +1,9 @@
 ---
 published: true
 ---
-##
+## JSON Web Security -- USING IBM APIC
 
- JSON Web Security -- USING IBM APIC
-
-####
-
- Description:
+#### Description:
 
 Exchange information between system securely using JSON Web Security with Digital Signature, Encrypting, Decrypting and Verifying Digital Signature in IBM API Connect. 
 
@@ -26,15 +22,15 @@ The information typlically JSON messages/requests or responses should be protect
    
    In the above fig2.. I have created seperate endpoints for Sign, Verify, Sign&Encrypt, Decrypt&Verify for the requirement in APIC. 
   ## APIC Paths/endpoints
-     /api/v1/json/sign           (this endpoint takes json request and signs the request...)
-     /api/v1/json/verify	       (this endpoint takes json request and verifies digital signature...)
-     /api/v1/json/enc_sign	     (this endpoint takes json request and encrypts message and does digital signature...)
-     /api/v1/json/enc_verify	   (this endpoint takes json request and decrypts message and verifies digital signature...)
+     **/api/v1/json/sign**          (this endpoint takes json request and signs the request...)
+     **/api/v1/json/verify**	       (this endpoint takes json request and verifies digital signature...)
+     **/api/v1/json/enc_sign**	     (this endpoint takes json request and encrypts message and does digital signature...)
+     **/api/v1/json/enc_verify**	   (this endpoint takes json request and decrypts message and verifies digital signature...)
    
  3. In Assembly pallete, create gateway script node to write cutsom gatewayscript.
      ![_apicAssembly]({{ site.baseurl }}/images/apic_assembly.png)
      
- ## Point to be noted...
+ #### Point to be noted...
     1. Once we have created the Crypto Objects in Datapower (to be precise, in Datapower Gateways we should'nt create objects directly instead,
     we should create using cli scripts.. am leaving here you can chek on this for more info on how to do this. )
     2. We have to reference the crypto object (Private Key) in the code to do Digital Signature.
@@ -50,12 +46,16 @@ The information typlically JSON messages/requests or responses should be protect
       
       Since the code snippet is self explanoatory Am not going through the code.
      
-  ## Point to be noted...
+  #### 
+  Point to be noted...
+  
     If you notice on the line no 13 ...
     Here in this function CreateJWSHeader we should pass PrivateKey and Alogithm to sign.
     The key here provided is **jsonSignprivkey** ... the actual format to refence the Datapower Object is {name: ObjectName}
     But we should provide only ObjectName as given in line no 13.
-  # Sign the Request using Postman.
+  ###
+
+ Sign the Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_sign.png)
      
   # Implimentation: Verify Signed Request
