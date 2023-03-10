@@ -17,6 +17,7 @@ The information typlically JSON messages/requests or responses should be protect
 # Implimentation: Sign Request
 1. Create Crypto Keys/certificate Objects in IBM Datapower.
     ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cryptObj.png)
+    ![_cryptoObjDataPower ]({{ site.baseurl }}/images/cert.png)
     
     
 2. Create an Open API in IBM API Connect to receive request and do digital signature and verification.
