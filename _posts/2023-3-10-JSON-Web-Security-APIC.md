@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ##
 
@@ -55,5 +55,5 @@ The information typlically JSON messages/requests or responses should be protect
     Here in this function CreateJWSHeader we should pass PrivateKey and Alogithm to sign.
     The key here provided is **jsonSignprivkey** ... the actual format to refence the Datapower Object is {name: ObjectName}
     But we should provide only ObjectName as given in line no 13.
-  # Sign the Request and Verify using Postman.
+  # Sign the Request using Postman.
      ![_apicAssemblySign]({{ site.baseurl }}/images/postman_sign.png)
