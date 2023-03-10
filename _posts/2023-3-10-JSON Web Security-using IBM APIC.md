@@ -96,4 +96,10 @@ Verify the Signed Request using Postman.
     
 # Implimentation: Decrypt the Request & Verify Digital Signature 
   ![_apicAssemblyVerifyEnc]({{ site.baseurl }}/images/apic_verifyEnc.png)
+  
+  
+  
+  Reference:
+  https://www.redhat.com/en/blog/jose-json-object-signing-and-encryption
+  https://www.ibm.com/docs/en/datapower-gateway/10.0.1?topic=apis-jose-module
     
