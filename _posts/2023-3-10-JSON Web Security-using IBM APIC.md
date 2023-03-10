@@ -99,7 +99,12 @@ Verify the Signed Request using Postman.
   
   
   
+  
+  
+  
+  
+  
   Reference:
-  https://www.redhat.com/en/blog/jose-json-object-signing-and-encryption
-  https://www.ibm.com/docs/en/datapower-gateway/10.0.1?topic=apis-jose-module
+  `https://www.redhat.com/en/blog/jose-json-object-signing-and-encryption
+  https://www.ibm.com/docs/en/datapower-gateway/10.0.1?topic=apis-jose-module`
     
